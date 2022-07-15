@@ -31,10 +31,11 @@ app = Client("JayBee", bot_token=bot_token, api_id=api, api_hash=hash, workers=w
 
 @app.on_message(filters.command('start'))
 def start(client, message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/TerminalWarlord/TikTok-Downloader-Bot/")]]
+    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Support Group 🔰', url="https://t.me/MoviesThunder_Chat_Group")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am **TikTok Downloader Bot**.\nI can download TikTok video without Watermark.\n\n"
-                          "__**Developer :**__ __@JayBeeDev__\n"
+                          "__**Developer :**__ __@legend_pirated__\n"
+                          "__**Support Group :**__ __@MoviesThunder_Chat_Group__\n"
                           "__**Language :**__ __Python__\n"
                           "__**Framework :**__ __🔥 Pyrogram__",
                      parse_mode='md',
@@ -45,7 +46,7 @@ def start(client, message):
 
 @app.on_message(filters.command('help'))
 def help(client, message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/TerminalWarlord/TikTok-Downloader-Bot/")]]
+    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Support Group 🔰', url="https://t.me/MoviesThunder_Chat_Group")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am **TikTok Downloader Bot**.\nI can download any TikTok video from a given link.\n\n"
                                             "__Send me a TikTok video link__",
